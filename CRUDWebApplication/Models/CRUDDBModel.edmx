@@ -33,7 +33,7 @@
           <Property Name="Age" Type="Int32" />
           <Property Name="Salary" Type="Int32" />
         </EntityType>
-        <EntityContainer Name="CRUDDBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CRUDDBEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Employee" EntityType="Self.Employee" />
         </EntityContainer>
       </Schema>
@@ -41,7 +41,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CRUDDBModelStoreContainer" CdmEntityContainer="CRUDDBEntities">
+        <EntityContainerMapping StorageEntityContainer="CRUDDBModelStoreContainer" CdmEntityContainer="CRUDDBEntities1">
           <EntitySetMapping Name="Employee">
             <EntityTypeMapping TypeName="CRUDDBModel.Employee">
               <MappingFragment StoreEntitySet="Employee">

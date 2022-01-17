@@ -13,10 +13,10 @@ namespace CRUDWebApplication.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CRUDDBEntities : DbContext
+    public partial class CRUDDBEntities1 : DbContext
     {
-        public CRUDDBEntities()
-            : base("name=CRUDDBEntities")
+        public CRUDDBEntities1()
+            : base("name=CRUDDBEntities1")
         {
         }
     
