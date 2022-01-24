@@ -1,0 +1,31 @@
+﻿@model CRUDWebApplication.Models.Employee
+@{
+    Layout = null;
+}
+@using(Html.BeginForm("AddOrEdit","Employee",FormMethod.Post))
+ {
+    @Html.HiddenFor(model=>model.EmployeeID)
+<div class="form-group">
+    @Html.LabelFor(model => model.Name, new { @class = "form-control" })
+    @Html.EditorFor(model => model.Name, new { @class = "form-control" })
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Position, new { @class = "form-control" })
+    @Html.EditorFor(model => model.Position, new { @class = "form-control" })
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Salary, new { @class = "form-control" })
+    @Html.EditorFor(model => model.Salary, new { @class = "form-control" })
+</div>
+<div class="form-group">
+    @Html.LabelFor(model => model.Age, new { @class = "form-control" })
+    @Html.EditorFor(model => model.Age, new { @class = "form-control" })
+</div>
+<div class="form-group">
+    <input type="submit" class="btn btn-primary" />
+    <input type="reset" class="btn btn-warning" />
+</div>
+
+ }
+
+
